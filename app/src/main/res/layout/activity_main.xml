@@ -32,7 +32,13 @@
             />
     </LinearLayout>
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW SCORE"
+        android:id="@+id/scoreBTN"
+        android:backgroundTint="#FF0000AA"
+        />
 
 
 </LinearLayout>
