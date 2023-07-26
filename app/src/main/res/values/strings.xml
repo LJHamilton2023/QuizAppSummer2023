@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">QuizAppSummer2023</string>
+    <string name="q1">Pi equals 3.0</string>
+    <string name="q2">Computer hardware is a collection of programs that provide instructions a
+        computer carries out.</string>
+    <string name="q3">An abstraction is a physical model that removes or hides unnecessary details.</string>
+    <string name="q4">A vacuum tube was used in the first generation of computers.</string>
+    <string name="q5">Magnetic disks were introduced in the third generation of computer hardware.</string>
+    <string name="urgtGJ">You are correct! Good Job!</string>
+    <string name="urwngTA">You are Wrong. Try again.</string>
+    <string name="bMsg1">"You got a score of: "</string>
+    <string name="bMsg2">.  Scoring email from app</string>
+    <string name="lblScr">"Score = "</string>
+    <string name="email_app">Email App</string>
 </resources>

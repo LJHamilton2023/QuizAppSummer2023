@@ -31,14 +31,11 @@ public class MainActivity extends AppCompatActivity {
         nextBTN = (Button) findViewById(R.id.nextBTN);
         score = 0;
 
-        q1 = new Question("Pi equals 3.0",false);
-        q2 = new Question("Computer hardware is a collection of " +
-                "programs that provide instructions a computer carries out.",false);
-        q3 = new Question("An abstraction is a physical model that removes or hides " +
-                "unnecessary details.");
-        q4 = new Question("A vacuum tube was used in the first generation of computers.",false);
-        q5 = new Question("Magnetic disks were introduced in the third generation of " +
-                "computer hardware.", true);
+        q1 = new Question(getString(R.string.q1),false);
+        q2 = new Question(getString(R.string.q2),false);
+        q3 = new Question(getString(R.string.q3),false);
+        q4 = new Question(getString(R.string.q4),true);
+        q5 = new Question(getString(R.string.q5), false);
         cQ = q1;
         questions = new Question[] {q1,q2,q3,q4,q5};
         msg = "";
@@ -48,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (false == cQ.getCorrectAnswer())
                 {
-                    msg = "You are correct! Good Job!";
+                    msg = getString(R.string.urgtGJ);
                     score++;
                 }
                 else
                 {
-                    msg = "You are Wrong. Try again.";
+                    msg = getString(R.string.urwngTA);
                 }
 
                 //CharSequence text = "Hello toast!";
