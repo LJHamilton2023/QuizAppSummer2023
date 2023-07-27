@@ -12,4 +12,6 @@
     <string name="bMsg2">.  Scoring email from app</string>
     <string name="lblScr">"Score = "</string>
     <string name="email_app">Email App</string>
+    <string name="gMsg">You are correct! Good Job!</string>
+    <string name="bMsg">You are Wrong. Try again.</string>
 </resources>

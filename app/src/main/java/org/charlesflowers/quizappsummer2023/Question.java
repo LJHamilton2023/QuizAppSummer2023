@@ -3,6 +3,11 @@ package org.charlesflowers.quizappsummer2023;
 public class Question {
     private String qPrompt;
     private boolean correctAnswer;
+    //records whether or not answered correctly
+    private boolean answered_correctly;
+    //records number of overall, total, attempts
+    //answering all of the questions
+    private int attempts;
 
     public Question(String qPrompt) {
         this.qPrompt = qPrompt;
@@ -35,6 +40,8 @@ public class Question {
     public void setCorrectAnswer(boolean correctAnswer) {
         this.correctAnswer = correctAnswer;
     }
+
+
 
     @Override
     public String toString() {

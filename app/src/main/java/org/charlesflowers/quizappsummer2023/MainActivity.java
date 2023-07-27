@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     msg = getString(R.string.urgtGJ);
                     score++;
+
                 }
                 else
                 {
@@ -58,19 +59,21 @@ public class MainActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(getApplicationContext(), msg, duration);
                 toast.show();
+                setBtns(false,false,true);
             }
+
         });
         trueBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (true == cQ.getCorrectAnswer())
                 {
-                    msg = "You are correct! Good Job!";
+                    msg = getString(R.string.gMsg);
                     score++;
                 }
                 else
                 {
-                    msg = "You are Wrong. Try again.";
+                    msg = getString(R.string.bMsg);
 
                 }
 
@@ -79,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(getApplicationContext(), msg, duration);
                 toast.show();
+                setBtns(false,false,true);
             }
         });
         nextBTN.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     cQ = questions[curNdx];
                     questionTV.setText(cQ.getqPrompt());
+                    setBtns(true,true,false);
                 }
                 else
                 {
@@ -100,5 +105,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+    private void setBtns(boolean fBtn,boolean tBtn, boolean nBtn){
+        falseBTN.setEnabled(fBtn);
+        trueBTN.setEnabled(tBtn);
+        nextBTN.setEnabled(nBtn);
+    }
+    @Override
+    public void onBackPressed() {
+        //moveTaskToBack(true);
+        if (curNdx > 1){
+
+            //curNdx--;
+            cQ = questions[--curNdx];
+            questionTV.setText(cQ.getqPrompt());
+            setBtns(true,true,false);
+        }
     }
 }
