@@ -1,9 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/score3TV3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Highest Score of All Time Score!"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/name1ET"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="text"
+        android:maxWidth="200sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:text="Player"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/score1ET"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="false"
+        android:editable="false"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="text"
+        android:layoutDirection="locale"
+        android:maxWidth="200sp"
+        android:maxLines="1"
+        android:minWidth="200sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/score3TV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Highest Score of All Time!"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/name2ET"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="text"
+        android:maxWidth="200sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:text="Player"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/score2ET"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="text"
+        android:layoutDirection="locale"
+        android:maxWidth="200sp"
+        android:maxLines="1"
+        android:minWidth="200sp"
+        android:text="Player"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/score3TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Third Highest Score of All Time!"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/name3ET"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="text"
+        android:maxWidth="200sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:text="Player"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/score3ET"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="text"
+        android:layoutDirection="locale"
+        android:maxWidth="200sp"
+        android:maxLines="1"
+        android:minWidth="200sp"
+        android:text="Player"
+        android:textAlignment="center" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,4 +131,5 @@
         android:id="@+id/sendBTN"
         android:backgroundTint="@color/orange"
         />
+
 </LinearLayout>

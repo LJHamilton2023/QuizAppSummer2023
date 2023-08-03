@@ -1,44 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
+
     <TextView
+        android:id="@+id/bannerTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Welcome Jay!"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgQ1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:maxHeight="550dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pexels_craig_adderley_1563356"
+        tools:srcCompat="@drawable/pexels_eberhard_grossgasteiger_2088210" />
+
+    <TextView
         android:id="@+id/questionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/q1"
-        android:textSize="30dp"
-        />
+        android:textSize="30dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FALSE"
             android:id="@+id/falseBTN"
-            android:backgroundTint="@color/red"
-            />
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TRUE"
+            android:backgroundTint="@color/red"
+            android:text="FALSE" />
+
+        <Button
             android:id="@+id/trueBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/green"
-            />
+            android:text="TRUE" />
     </LinearLayout>
 
-
     <Button
+        android:id="@+id/nextBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT"
-        android:id="@+id/nextBTN"
         android:backgroundTint="@color/blue"
-        />
+        android:enabled="false"
+        android:text="NEXT" />
 
 </LinearLayout>

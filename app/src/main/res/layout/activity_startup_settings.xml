@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartupSettings">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Quiz App Setting Page"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002"
+        tools:text="Welcome to Quiz App Setting Page" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="485dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <RadioGroup
+        android:id="@+id/GrpFalseBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <RadioButton
+            android:id="@+id/rbR_FB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/red"
+            android:buttonTint="@color/red"
+            android:text="Red"
+            android:textSize="28sp"
+            tools:text="Red" />
+
+        <RadioButton
+            android:id="@+id/rbGrn_FB"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/green"
+            android:text="Green"
+            android:textSize="28sp"
+            tools:text="Green" />
+
+        <RadioButton
+            android:id="@+id/rbBlu_FB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/blue"
+            android:text="Blue"
+            android:textSize="28sp"
+            tools:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/rbBlk_FB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="@android:color/black"
+            android:text="Black"
+            android:textSize="28sp"
+            tools:text="Black" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Color fo False Button"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/GrpFalseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Choose Color for False Button" />
+
+
+    <RadioGroup
+        android:id="@+id/GrpTrueBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466">
+
+        <RadioButton
+            android:id="@+id/rbR_TB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/red"
+            android:text="Red"
+            android:textSize="28sp"
+            tools:text="Red" />
+
+        <RadioButton
+            android:id="@+id/rbGrn_TB"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/green"
+            android:text="Green"
+            android:textSize="28sp"
+            tools:text="Green" />
+
+        <RadioButton
+            android:id="@+id/rbBlu_TB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/blue"
+            android:text="Blue"
+            android:textSize="28sp"
+            tools:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/rbBlk_TB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="@color/dark_gray"
+            android:text="Black"
+            android:textSize="28sp"
+            tools:text="Black" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Color for True Button"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/GrpTrueBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Choose Color for True Button" />
+
+    <RadioGroup
+        android:id="@+id/GrpNextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <RadioButton
+            android:id="@+id/rbR_NB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/red"
+            android:text="Red"
+            android:textSize="28sp"
+            tools:text="Red" />
+
+        <RadioButton
+            android:id="@+id/rbGrn_NB"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/green"
+            android:text="Green"
+            android:textSize="28sp"
+            tools:text="Green" />
+
+        <RadioButton
+            android:id="@+id/rbBlu_NB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:width="100sp"
+            android:backgroundTint="@color/blue"
+            android:text="Blue"
+            android:textSize="28sp"
+            tools:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/rbBlk_NB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="@color/dark_gray"
+            android:text="Black"
+            android:textSize="28sp"
+            tools:text="Black" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Color for Next Button"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/GrpNextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Choose Color for True Button" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:text="All Questions Answered (No Skipping)"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GrpNextBtn"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="All Questions Answered (No Skipping)" />
+
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <EditText
+        android:id="@+id/pointsET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/penaltyET"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <EditText
+        android:id="@+id/penaltyET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/pointsET"
+        app:layout_constraintEnd_toEndOf="@+id/pointsET"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/pointsET"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Penalty"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/penaltyET"
+        app:layout_constraintEnd_toEndOf="@+id/penaltyET"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/penaltyET"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Penalty" />
+</androidx.constraintlayout.widget.ConstraintLayout>

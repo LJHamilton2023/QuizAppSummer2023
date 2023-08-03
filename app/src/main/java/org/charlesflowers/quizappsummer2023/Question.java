@@ -1,13 +1,19 @@
 package org.charlesflowers.quizappsummer2023;
 
+import android.provider.MediaStore;
+
 public class Question {
     private String qPrompt;
     private boolean correctAnswer;
     //records whether or not answered correctly
-    private boolean answered_correctly;
+    private boolean answered = false;
     //records number of overall, total, attempts
     //answering all of the questions
-    private int attempts;
+    private static int attempts;
+
+    private int pic;
+
+    //private MediaStore.Images.ImageColumns
 
     public Question(String qPrompt) {
         this.qPrompt = qPrompt;
@@ -23,6 +29,14 @@ public class Question {
     }
 
     public Question() {
+    }
+
+    public static int getAttempts() {
+        return attempts;
+    }
+
+    public static void setAttempts(int attempts) {
+        Question.attempts = attempts;
     }
 
     public String getqPrompt() {
@@ -49,5 +63,21 @@ public class Question {
                 "qPrompt='" + qPrompt + '\'' +
                 ", correctAnswer=" + correctAnswer +
                 '}';
+    }
+
+    public boolean isAnswered() {
+        return answered;
+    }
+
+    public void setAnswered(boolean answered) {
+        this.answered = answered;
+    }
+
+    public int getPic() {
+        return pic;
+    }
+
+    public void setPic(int pic) {
+        this.pic = pic;
     }
 }

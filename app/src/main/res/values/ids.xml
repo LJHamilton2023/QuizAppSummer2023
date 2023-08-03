@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="settings" type="id" />
+    <item name="rb3Blk" type="id" />
+    <item name="rb3Red" type="id" />
+    <item name="rb3Grn" type="id" />
+    <item name="rb3Blu" type="id" />
+    <item name="radioGroup3" type="id" />
+</resources>
