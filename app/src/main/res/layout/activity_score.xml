@@ -14,107 +14,75 @@
         android:textAlignment="center"
         android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/name1ET"
+    <TextView
+        android:id="@+id/name1TV"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
-        android:editable="false"
-        android:ellipsize="end"
-        android:ems="10"
-        android:gravity="end"
-        android:inputType="text"
-        android:maxWidth="200sp"
-        android:maxLines="1"
-        android:minWidth="100sp"
-        android:text="Player"
-        android:textAlignment="center" />
-
-    <EditText
-        android:id="@+id/score1ET"
-        android:layout_width="300sp"
-        android:layout_height="wrap_content"
-        android:duplicateParentState="false"
-        android:editable="false"
-        android:ellipsize="end"
-        android:ems="10"
-        android:inputType="text"
-        android:layoutDirection="locale"
-        android:maxWidth="200sp"
-        android:maxLines="1"
-        android:minWidth="200sp"
-        android:textAlignment="center" />
+        android:textSize="34sp" />
 
     <TextView
-        android:id="@+id/score3TV2"
+        android:id="@+id/score1TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/time1TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/midScoreBannerTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Second Highest Score of All Time!"
         android:textAlignment="center"
         android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/name2ET"
+    <TextView
+        android:id="@+id/name2TV"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:ems="10"
-        android:gravity="end"
-        android:inputType="text"
-        android:maxWidth="200sp"
-        android:maxLines="1"
-        android:minWidth="100sp"
-        android:text="Player"
-        android:textAlignment="center" />
-
-    <EditText
-        android:id="@+id/score2ET"
-        android:layout_width="300sp"
-        android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:ems="10"
-        android:inputType="text"
-        android:layoutDirection="locale"
-        android:maxWidth="200sp"
-        android:maxLines="1"
-        android:minWidth="200sp"
-        android:text="Player"
-        android:textAlignment="center" />
+        android:textSize="34sp" />
 
     <TextView
-        android:id="@+id/score3TV"
+        android:id="@+id/score2TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/time2TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/lowScoreBannerTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Third Highest Score of All Time!"
         android:textAlignment="center"
         android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/name3ET"
+    <TextView
+        android:id="@+id/name3TV"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:ems="10"
-        android:gravity="end"
-        android:inputType="text"
-        android:maxWidth="200sp"
-        android:maxLines="1"
-        android:minWidth="100sp"
-        android:text="Player"
-        android:textAlignment="center" />
+        android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/score3ET"
+    <TextView
+        android:id="@+id/score3TV"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:ems="10"
-        android:inputType="text"
-        android:layoutDirection="locale"
-        android:maxWidth="200sp"
-        android:maxLines="1"
-        android:minWidth="200sp"
-        android:text="Player"
-        android:textAlignment="center" />
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/time3TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
 
     <TextView
         android:layout_width="match_parent"

@@ -13,7 +13,8 @@ import android.widget.TextView;
 
 public class ScoreActivity extends AppCompatActivity {
     private SharedPreferences mPreferences;
-    private final String sharedPrefFile = "org.codeintheschools.android.unit3_lesson1_a";
+    //private final String sharedPrefFile = "org.codeintheschools.android.unit3_lesson1_a";
+    private final String sharedPrefFile = "org.codeintheschools.android.QuizAppMilestone4";
     TextView scoreTV;
     Button sendBTN;
     int score;
@@ -48,13 +49,13 @@ public class ScoreActivity extends AppCompatActivity {
 //
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
         int tmp1=0, tmp2=0, tmp3=0;
-        int initTopScore = 30;
-        int initMidTopScore = 25;
-        int initLowTopScore = 20;
+        //int initTopScore = 30;
+        //int initMidTopScore = 25;
+        //int initLowTopScore = 20;
 
-        //int initTopScore = mPreferences.getInt(TOP_SCORE,(int) tmp1 );
-        //int initMidTopScore = mPreferences.getInt(MID_TOP_SCORE,(int) tmp2 );
-        //int initLowTopScore = mPreferences.getInt(LOW_TOP_SCORE,(int) tmp3 );
+        int initTopScore =  mPreferences.getInt(TOP_SCORE,(int) tmp1 );
+        int initMidTopScore =  mPreferences.getInt(MID_TOP_SCORE,(int) tmp2 );
+        int initLowTopScore =  mPreferences.getInt(LOW_TOP_SCORE,(int) tmp3 );
         String initTopScoreName = mPreferences.getString(TOP_SCORE_NAME,"Player1" );
         String initMidTopScoreName = mPreferences.getString(MID_TOP_SCORE_NAME,"Player2" );
         String initLowTopScoreName = mPreferences.getString(LOW_TOP_SCORE_NAME,"Player3" );
@@ -68,45 +69,51 @@ public class ScoreActivity extends AppCompatActivity {
         if(score > initTopScore){
             prefEdit.putInt(TOP_SCORE,(int) score);
             prefEdit.putString(TOP_SCORE_NAME,name);
-            prefEdit.putFloat(TOP_SCORE,initTopScoreTime);
+            //prefEdit.putFloat(TOP_SCORE_TIME,initTopScoreTime);
+            prefEdit.putFloat(TOP_SCORE_TIME,ttlTm);
         }
         else if (score == initTopScore) {
-            if (Float.compare(ttlTm,initTopScoreTime) < 0 ){
+            if (Float.compare(ttlTm,initTopScoreTime) < 0 || Float.compare(initTopScoreTime,0)==0){
                 prefEdit.putInt(TOP_SCORE,(int) score);
                 prefEdit.putString(TOP_SCORE_NAME,name);
-                prefEdit.putFloat(TOP_SCORE,initTopScoreTime);
+                //prefEdit.putFloat(TOP_SCORE_TIME,initTopScoreTime);
+                prefEdit.putFloat(TOP_SCORE_TIME,ttlTm);
             }
         }
         else if(score > initMidTopScore){
             prefEdit.putInt(MID_TOP_SCORE,(int) score);
             prefEdit.putString(MID_TOP_SCORE_NAME,name);
-            prefEdit.putFloat(MID_TOP_SCORE_TIME,initMidTopScoreTime);
+            //prefEdit.putFloat(MID_TOP_SCORE_TIME,initMidTopScoreTime);
+            prefEdit.putFloat(MID_TOP_SCORE_TIME,ttlTm);
         }
-        else if (score == initMidTopScore) {
-            if (Float.compare(ttlTm,initMidTopScoreTime) < 0){
+        else if (score == initMidTopScore ) {
+            if (Float.compare(ttlTm,initMidTopScoreTime) < 0 || Float.compare(initMidTopScoreTime,0)==0){
                 prefEdit.putInt(MID_TOP_SCORE,score);
                 prefEdit.putString(MID_TOP_SCORE_NAME,name);
-                prefEdit.putFloat(MID_TOP_SCORE_TIME,initMidTopScoreTime);
+                //prefEdit.putFloat(MID_TOP_SCORE_TIME,initMidTopScoreTime);
+                prefEdit.putFloat(MID_TOP_SCORE_TIME,ttlTm);
             }
         }
         else if(score > initLowTopScore){
             prefEdit.putInt(LOW_TOP_SCORE,(int) score);
             prefEdit.putString(LOW_TOP_SCORE_NAME,name);
-            prefEdit.putFloat(LOW_TOP_SCORE_TIME,initLowTopScoreTime);
+            //prefEdit.putFloat(LOW_TOP_SCORE_TIME,initLowTopScoreTime);
+            prefEdit.putFloat(LOW_TOP_SCORE_TIME,ttlTm);
         }
         else if (score == initLowTopScore) {
-            if (Float.compare(ttlTm,initLowTopScoreTime) < 0){
+            if (Float.compare(ttlTm,initLowTopScoreTime) < 0 || Float.compare(initLowTopScoreTime,0)==0){
                 prefEdit.putInt(LOW_TOP_SCORE,(int) score);
                 prefEdit.putString(LOW_TOP_SCORE_NAME,name);
-                prefEdit.putFloat(LOW_TOP_SCORE_TIME,initLowTopScoreTime);
+                //prefEdit.putFloat(LOW_TOP_SCORE_TIME,initLowTopScoreTime);
+                prefEdit.putFloat(LOW_TOP_SCORE_TIME,ttlTm);
             }
         }
         prefEdit.apply();
 
         //      update stored info
-        //initTopScore = mPreferences.getInt(TOP_SCORE,(int) tmp1 );
-        //initMidTopScore = mPreferences.getInt(MID_TOP_SCORE,(int) tmp2 );
-        //initLowTopScore = mPreferences.getInt(LOW_TOP_SCORE,(int) tmp3 );
+        initTopScore =   mPreferences.getInt(TOP_SCORE,(int) tmp1 );
+        initMidTopScore =  mPreferences.getInt(MID_TOP_SCORE,(int) tmp2 );
+        initLowTopScore =  mPreferences.getInt(LOW_TOP_SCORE,(int) tmp3 );
         initTopScoreName = mPreferences.getString(TOP_SCORE_NAME,"Player1" );
         initMidTopScoreName = mPreferences.getString(MID_TOP_SCORE_NAME,"Player2" );
         initLowTopScoreName = mPreferences.getString(LOW_TOP_SCORE_NAME,"Player3" );
@@ -114,19 +121,25 @@ public class ScoreActivity extends AppCompatActivity {
         initMidTopScoreTime = mPreferences.getFloat(MID_TOP_SCORE_TIME,(float) 0.0 );
         initLowTopScoreTime = mPreferences.getFloat(LOW_TOP_SCORE_TIME,(float) 0.0 );
 //
-        EditText name1ET = findViewById(R.id.name1ET);
-        EditText name2ET = findViewById(R.id.name2ET);
-        EditText name3ET = findViewById(R.id.name3ET);
-        EditText score1ET = findViewById(R.id.score1ET);
-        EditText score2ET = findViewById(R.id.score2ET);
-        EditText score3ET = findViewById(R.id.score3ET);
+        TextView name1TV = findViewById(R.id.name1TV);
+        TextView name2TV = findViewById(R.id.name2TV);
+        TextView name3TV = findViewById(R.id.name3TV);
+        TextView score1TV = findViewById(R.id.score1TV);
+        TextView score2TV = findViewById(R.id.score2TV);
+        TextView score3TV = findViewById(R.id.score3TV);
+        TextView time1TV = findViewById(R.id.time1TV);
+        TextView time2TV = findViewById(R.id.time2TV);
+        TextView time3TV = findViewById(R.id.time3TV);
 //
-         name1ET.setText(initTopScoreName);
-         name2ET.setText(initMidTopScoreName);
-         name3ET.setText(initLowTopScoreName);
-         score1ET.setText(Integer.toString(initTopScore));
-         score2ET.setText(Integer.toString(initMidTopScore));
-         score3ET.setText(Integer.toString(initLowTopScore));
+         name1TV.setText(initTopScoreName);
+         name2TV.setText(initMidTopScoreName);
+         name3TV.setText(initLowTopScoreName);
+         score1TV.setText(Integer.toString(initTopScore));
+         score2TV.setText(Integer.toString(initMidTopScore));
+         score3TV.setText(Integer.toString(initLowTopScore));
+         time1TV.setText(Float.toString(initTopScoreTime));
+         time2TV.setText(Float.toString(initMidTopScoreTime));
+         time3TV.setText(Float.toString(initLowTopScoreTime));
 //
         sendBTN.setOnClickListener(new View.OnClickListener() {
             @Override
