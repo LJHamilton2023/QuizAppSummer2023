@@ -12,3 +12,6 @@ Option 2: Any data storage solution (SharedPreference, FileStorage, or Firebase)
 SharePreference files are used throughout
 The timed play was implemented and records display along with highest score data.
 A HighScore class was added with the intention to use it to create an arraylist with which populate a GridView Layout of the Highest scores.  However, time ran out on implementing it.  I settled for a much more straightforward display using a linearlayout with TextViews instead.
+player can choose whether or not to play music.
+music added,
+top three ranking enhanced to compare both score and time when determing each placing, not just when new score is equal.
