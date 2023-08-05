@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/score3TV3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Highest Score of All Time Score!"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/name1TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/score1TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/time1TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/midScoreBannerTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Highest Score of All Time!"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/name2TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/score2TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/time2TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/lowScoreBannerTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Third Highest Score of All Time!"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/name3TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/score3TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/time3TV"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/scoreTV"
+        android:text="Score: ?"
+        android:textSize="60dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/sendBTN"
+        android:backgroundTint="@color/orange"
+        />
+
+</LinearLayout>

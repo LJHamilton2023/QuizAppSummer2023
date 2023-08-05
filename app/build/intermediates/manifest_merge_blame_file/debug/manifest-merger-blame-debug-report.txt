@@ -1,0 +1,124 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.charlesflowers.quizappsummer2023"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\Jay\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="org.charlesflowers.quizappsummer2023.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\Jay\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\Jay\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="org.charlesflowers.quizappsummer2023.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\Jay\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\Jay\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:5:5-36:19
+18        android:allowBackup="true"
+18-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\Jay\.gradle\caches\transforms-3\55dedc70b95a473650eda30d4efd0f99\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.QuizAppSummer2023" >
+29-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:13:9-55
+30        <activity
+30-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:15:9-23:20
+31            android:name="org.charlesflowers.quizappsummer2023.StartupSettings"
+31-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:16:13-44
+32            android:exported="true" >
+32-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:17:13-36
+33            <intent-filter>
+33-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:18:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:19:17-69
+34-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:21:17-77
+36-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:24:9-26:40
+40            android:name="org.charlesflowers.quizappsummer2023.ScoreActivity"
+40-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:25:13-42
+41            android:exported="false" />
+41-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:26:13-37
+42        <activity
+42-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:27:9-35:20
+43            android:name="org.charlesflowers.quizappsummer2023.MainActivity"
+43-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:28:13-41
+44            android:exported="true" >
+44-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:29:13-36
+45            <intent-filter>
+45-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:18:13-22:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:19:17-69
+46-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:19:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:21:17-77
+48-->C:\Users\Jay\AndroidStudioProjects\QuizAppSummer2023\app\src\main\AndroidManifest.xml:21:27-74
+49            </intent-filter>
+50        </activity>
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+54            android:authorities="org.charlesflowers.quizappsummer2023.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Jay\.gradle\caches\transforms-3\58734ab3db9d01442ffac75a0ea2bc68\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jay\.gradle\caches\transforms-3\75d35fda4271de3dc184847093d1a2b0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jay\.gradle\caches\transforms-3\75d35fda4271de3dc184847093d1a2b0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Jay\.gradle\caches\transforms-3\75d35fda4271de3dc184847093d1a2b0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+62        </provider>
+63
+64        <uses-library
+64-->[androidx.window:window:1.0.0] C:\Users\Jay\.gradle\caches\transforms-3\98fbcfdeb64a67de9fd697c6d31f0b08\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+65            android:name="androidx.window.extensions"
+65-->[androidx.window:window:1.0.0] C:\Users\Jay\.gradle\caches\transforms-3\98fbcfdeb64a67de9fd697c6d31f0b08\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+66            android:required="false" />
+66-->[androidx.window:window:1.0.0] C:\Users\Jay\.gradle\caches\transforms-3\98fbcfdeb64a67de9fd697c6d31f0b08\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+67        <uses-library
+67-->[androidx.window:window:1.0.0] C:\Users\Jay\.gradle\caches\transforms-3\98fbcfdeb64a67de9fd697c6d31f0b08\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+68            android:name="androidx.window.sidecar"
+68-->[androidx.window:window:1.0.0] C:\Users\Jay\.gradle\caches\transforms-3\98fbcfdeb64a67de9fd697c6d31f0b08\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+69            android:required="false" />
+69-->[androidx.window:window:1.0.0] C:\Users\Jay\.gradle\caches\transforms-3\98fbcfdeb64a67de9fd697c6d31f0b08\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+70    </application>
+71
+72</manifest>

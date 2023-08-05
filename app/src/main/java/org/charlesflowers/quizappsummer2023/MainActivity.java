@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
     private  final String CHECKBOX_KEY = "CHKBX";
     private final String POINTS_PER_QUESTION = "POINTS";
     private final String PENALTY_PER_QUESTION = "PENALTY_POINTS";
-
+    private final String MUSIC_SWITCH_KEY = "MUSIC";
     TextView questionTV, bannerTV;
     ImageView imgQ1;
-    String [] pics = new String []{"@drawable/pexels_eberhard_grossgasteiger_2088210",
+    String [] pics = new String []{
             "@drawable/pexels_james_wheeler_1519088",
             "@drawable/pexels_matthew_montrone_1324803",
             "@drawable/pexels_max_andrey_1366630",
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Log.d(TAG,"onCreate: started.");
 //
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
@@ -61,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         String initClr_NBtn = mPreferences.getString(COLOR_KEY_NBtn,"#222021" );
         String initName = mPreferences.getString(NAME_KEY,"Player");
         Boolean initChkBx = mPreferences.getBoolean(CHECKBOX_KEY,true);
+        Boolean initSwMusic = mPreferences.getBoolean(MUSIC_SWITCH_KEY,false);
+//
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.jeopardythemesong);
+        if (initSwMusic) mp.start();
 //
         bannerTV = findViewById(R.id.bannerTV);
         imgQ1 = findViewById(R.id.imgQ1);
@@ -181,14 +187,13 @@ public class MainActivity extends AppCompatActivity {
                 {
                     //calculate total time of quiz
                     double totalTime = (System.currentTimeMillis() - startTime)/1000.0;
-
                     Intent scoreIntent = new Intent(MainActivity.this, ScoreActivity.class);
                     scoreIntent.putExtra("name",initName);
                     scoreIntent.putExtra("score",(int) score);
                     scoreIntent.putExtra("ttlTime",totalTime);
+                    if (initSwMusic) mp.stop();
                     startActivity(scoreIntent);
                 }
-
             }
         });
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#0018F9</color>
+    <color name="dark_gray">#222021</color>
+    <color name="green">#3BB143</color>
+    <color name="orange">#FC6600</color>
+    <color name="red">#D30000</color>
+    <item name="radioGroup3" type="id"/>
+    <item name="rb3Blk" type="id"/>
+    <item name="rb3Blu" type="id"/>
+    <item name="rb3Grn" type="id"/>
+    <item name="rb3Red" type="id"/>
+    <item name="settings" type="id"/>
+    <string name="ansAll">" You must answer every question, no skipping."</string>
+    <string name="app_name">QuizAppSummer2023</string>
+    <string name="bMsg">You are Wrong. Try again.</string>
+    <string name="bMsg1">"You got a score of: "</string>
+    <string name="bMsg2">.  Scoring email from app</string>
+    <string name="canSkip">" You can skip and go back if you like."</string>
+    <string name="email_app">Email App</string>
+    <string name="gMsg">You are correct! Good Job!</string>
+    <string name="greet1">"Welcome "</string>
+    <string name="moMsg">Already answered, move on!</string>
+    <string name="q1">Pi equals 3.0</string>
+    <string name="q2">Computer hardware is a collection of programs that provide instructions a
+        computer carries out.</string>
+    <string name="q3">An abstraction is a physical model that removes or hides unnecessary details.</string>
+    <string name="q4">A vacuum tube was used in the first generation of computers.</string>
+    <string name="q5">Magnetic disks were introduced in the third generation of computer hardware.</string>
+    <string name="urgtGJ">You are correct! Good Job!</string>
+    <style name="Base.Theme.QuizAppSummer2023" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.QuizAppSummer2023" parent="Base.Theme.QuizAppSummer2023"/>
+</resources>

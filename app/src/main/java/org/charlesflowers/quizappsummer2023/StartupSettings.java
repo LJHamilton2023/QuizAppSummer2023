@@ -5,6 +5,7 @@ import androidx.core.widget.TintableCompoundButton;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Switch;
 
 public class StartupSettings extends AppCompatActivity {
 
@@ -24,6 +26,7 @@ public class StartupSettings extends AppCompatActivity {
     private  final String CHECKBOX_KEY = "CHKBX";
     private final String POINTS_PER_QUESTION = "POINTS";
     private final String PENALTY_PER_QUESTION = "PENALTY_POINTS";
+    private final String MUSIC_SWITCH_KEY = "MUSIC";
 //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public class StartupSettings extends AppCompatActivity {
         RadioButton rbR_NB,rbGrn_NB,rbBlu_NB,rbBlk_NB;
 //
         CheckBox checkBox;
+//
+        Switch swMusic;
 //
         Button saveBtn;
 //
@@ -62,6 +67,8 @@ public class StartupSettings extends AppCompatActivity {
 
         checkBox = findViewById(R.id.checkBox);
 //
+        swMusic = findViewById(R.id.swMusic);
+//
         saveBtn = findViewById(R.id.saveBTN);
 //
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
@@ -71,6 +78,7 @@ public class StartupSettings extends AppCompatActivity {
         String initClr_NBtn = mPreferences.getString(COLOR_KEY_NBtn,"#222021" );
         String initName = mPreferences.getString(NAME_KEY,"");
         Boolean initChkBx = mPreferences.getBoolean(CHECKBOX_KEY,true);
+        Boolean initSwMusic = mPreferences.getBoolean(MUSIC_SWITCH_KEY,false);
         int initPoints = mPreferences.getInt(POINTS_PER_QUESTION,5);
         int initPenalty = mPreferences.getInt(PENALTY_PER_QUESTION,2);
 
@@ -135,10 +143,12 @@ public class StartupSettings extends AppCompatActivity {
         SharedPreferences.Editor preferencesEditor = mPreferences.edit();
         //if (rbR_FB)
 
+        //final MediaPlayer mp = MediaPlayer.create(this,R.raw.jeopardythemesong);
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //
+                //mp.start();
                 if (rbR_FB.isChecked()) {
                     //preferencesEditor.putString(COLOR_KEY_FBtn,"@color/red" );
                     preferencesEditor.putString(COLOR_KEY_FBtn,"#D30000" );
@@ -198,10 +208,13 @@ public class StartupSettings extends AppCompatActivity {
                 preferencesEditor.putInt(POINTS_PER_QUESTION,Integer.parseInt(pointsET.getText().toString()));
                 //}
                 preferencesEditor.putInt(PENALTY_PER_QUESTION,Integer.parseInt(penaltyET.getText().toString()));
+                preferencesEditor.putBoolean(MUSIC_SWITCH_KEY,swMusic.isChecked());
                 //Commit the value and save the file.
                 preferencesEditor.apply();
                 //
                 Intent intent = new Intent(StartupSettings.this, MainActivity.class);
+                //if (swMusic.isChecked()) mp.stop();
+                intent.putExtra("SW_Music",swMusic.isChecked());
                 startActivity(intent);
             }
         });
